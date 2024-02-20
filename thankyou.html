@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body onload="getUserName()">
+
+    <h3> Dear, <h3 id="h3"></h3> Thank you for your inquiry. </h3> <br>
+     <h4 id="h4"> A Four digit verification number has been sent to your email: </h4>
+    
+    <div class="box">
+    <label for="OTP" class="label">Please Enter it in the following box</label> <br> <br>
+    <input placeholder="please enter OTP" id="text" required>  <br> <br>
+ 
+    <button class="button" id= "button" onclick="verify()"> Verify</button> <br> <br>
+</div>
+
+    <script src="index.js"></script>
+</body>
+</html>

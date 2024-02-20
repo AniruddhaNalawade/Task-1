@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Application</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body onload="getRandom()">
+    <div class="container">
+        <h1>Loan Application Form</h1>
+    </div>
+    <form action="" name="regi-form" onsubmit="return onSubmit()" method="post">
+        <fieldset>
+        <legend>Loan Application page</legend> <br> <br>
+        <label for="fname">Name :</label>
+        <input type="text" id="fname" name="fname" placeholder="Please Enter Your Name"> 
+        <p id="p1"></p> <br> <br>
+
+        <label for="email">E-mail :</label> 
+        <input type="email" id="email" name="email" placeholder="Please Enter E-mail"> 
+        <p id="p2"></p><br> <br>
+
+        <label for="pan">PAN Details :</label> 
+        <input type="text" name="pancard" id="pancard"  placeholder="Please Enter Your PANCARD Details"> 
+        <p id="p3"></p> <br> <br>
+        
+        <label for="loanamount">Loan Amount:</label> 
+        <input type="number" name="loan" id="number" placeholder="Please Enter Loan Amount" >
+        <p id="p4"></p>
+        <span id="words"></span>
+        
+        <br> <br>
+        
+
+        <label for="captcha" id="captcha-label"></label>
+        <a class="button-home" name="captcha-input" href="index.html"> Refresh</a>
+        <p id="p5"></p> <br> <br>
+
+        <input type="number" name="captcha" placeholder="Enter sum of given numbers" id="captcha" > 
+        <p id="p6"></p><br> <br>
+
+
+        <button type="submit" id="button">submit</button> <br> <br>
+    </fieldset>
+    </form>
+    <br> <br>
+    
+    <marquee behavior="" direction="">Welcome to loan Application Page..!!!</marquee>
+
+    <script src="index.js"></script>
+</body>
+</html>
